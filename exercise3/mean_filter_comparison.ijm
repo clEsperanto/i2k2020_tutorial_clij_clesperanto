@@ -24,6 +24,7 @@ Ext.CLIJ2_push(input);
 // apply filter using CLIJ
 gpu_result = "GPU result";
 Ext.CLIJ2_mean3DBox(input, gpu_result, 3, 3, 3);
+Ext.CLIJ2_pull(gpu_result);
 
 // TRY mean3DSPhere!
 // Ext.CLIJ2_mean3DSphere(input, gpu_result, 3, 3, 3);

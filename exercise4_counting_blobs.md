@@ -10,3 +10,5 @@ Use these functions:
 In order to achieve this, it is recommended to use the Macro recorder or auto-completion in the script editor.
 
 Optional: Write this script in Fijis Jython or Icy JavaScript
+
+![Image](images/count_blobs.png)
