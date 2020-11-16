@@ -9,6 +9,8 @@ Use these functions:
 
 In order to achieve this, it is recommended to use the Macro recorder or auto-completion in the script editor.
 
-Optional: Write this script in Fijis Jython or Icy JavaScript
+Optional: Write this script in Fijis Jython or Icy JavaScript. If you use Icy, turn on CLIJs recorder and execute the operations from the menu.
 
 ![Image](images/count_blobs.png)
+
+![Image](images/count_blobs_icy.png)
