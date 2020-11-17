@@ -1,0 +1,26 @@
+This protocol documents an image data flow using CLIJx-Assistant.
+Read more about it online: https://clij.github.io/assistant/ 
+
+Generator version: 0.4.0.8
+
+We start our image data flow with image1.
+ 
+Afterwards, we applied "Copy" on image1, and got a new image out, image2.
+ 
+As the next step we applied "Gaussian Blur2D" on image2, and got a
+new image out, image3.
+In order to do so, we used the parameters sigma_x = 16.0 and
+sigma_y = 16.0.
+ 
+As the next step we applied "Greater" on image2 and image3, and got
+a new image out, image4.
+ 
+Then, we applied "Connected Components Labeling Box" on image4, and
+got a new image out, image5.
+
+Used images
+ * image1: temp1605606091856.tif
+ * image2: CLIJx Image of temp1605606091856.tif
+ * image3: Gaussian Blur2D of CLIJx Image of temp1605606091856.tif
+ * image4: Greater of CLIJx Image of temp1605606091856.tif
+ * image5: Connected Components Labeling Box of Greater of CLIJx Image of temp1605606091856.tif

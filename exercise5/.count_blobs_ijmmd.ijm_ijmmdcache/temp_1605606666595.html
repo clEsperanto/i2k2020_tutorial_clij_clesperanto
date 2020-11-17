@@ -1,0 +1,69 @@
+<html><head>
+<style>
+@font-face{font-family:Helvetica, Arial;font-weight:400;}
+body{font-family:Helvetica, Arial;}
+pre{font-family:Courier New, monospace;color:#000000;padding:5px 5px;background:#eeeeee;border:1px solid #dddddd;overflow-x:auto;margin:0}
+code{font-family:Courier New, monospace;}
+p,ul,ol,table,pre,dl{margin:0 0 20px}
+h1,h2,h3,h4,h5,h6{font-family:Helvetica, Arial;color:#222;margin:0 0 20px}
+h1,h2,h3{line-height:1.1}
+h1{font-size:28px}
+h2{color:#393939}
+h3,h4,h5,h6{color:#494949}
+table{padding:5px 5px;}
+th, td{font-family:Helvetica, Arial;margin:10px 10px 10px 10px; border: 1px solid #dddddd; padding: 15px;}}
+</style>
+</head>
+<body>
+<p>To make this script run in Fiji, please activate
+the clij, clij2 and IJMMD update sites in your Fiji
+installation. Read more: https://clij.github.io</p>
+<p>Generator version: 0.4.0.8</p>
+<pre><code class="language-java">// Init GPU
+run(&quot;CLIJ2 Macro Extensions&quot;, &quot;cl_device=&quot;);
+
+// Load image from disc 
+open(&quot;C:/Users/rober/AppData/Local/Temp/temp1605606091856.tif&quot;);
+image1 = getTitle();
+Ext.CLIJ2_push(image1);
+
+</code></pre>
+<p><a href="image_1605606666119.png"><img src="image_1605606666119.png" width="250" alt="temp1605606091856-2.tif"/></a></p>
+<h2>Copy</h2>
+<pre><code class="language-java">Ext.CLIJ2_copy(image1, image2);
+Ext.CLIJ2_release(image1);
+
+Ext.CLIJ2_pull(image2);
+
+</code></pre>
+<p><a href="image_1605606666235.png"><img src="image_1605606666235.png" width="250" alt="CLIJ2_copy_result5"/></a></p>
+<h2>Gaussian Blur2D</h2>
+<pre><code class="language-java">sigma_x = 16.0;
+sigma_y = 16.0;
+Ext.CLIJ2_gaussianBlur2D(image2, image3, sigma_x, sigma_y);
+
+Ext.CLIJ2_pull(image3);
+
+</code></pre>
+<p><a href="image_1605606666336.png"><img src="image_1605606666336.png" width="250" alt="CLIJ2_gaussianBlur2D_result6"/></a></p>
+<h2>Greater</h2>
+<pre><code class="language-java">Ext.CLIJ2_greater(image2, image3, image4);
+Ext.CLIJ2_release(image2);
+Ext.CLIJ2_release(image3);
+
+Ext.CLIJ2_pull(image4);
+
+</code></pre>
+<p><a href="image_1605606666406.png"><img src="image_1605606666406.png" width="250" alt="CLIJ2_greater_result7"/></a></p>
+<h2>Connected Components Labeling Box</h2>
+<pre><code class="language-java">Ext.CLIJ2_connectedComponentsLabelingBox(image4, image5);
+Ext.CLIJ2_release(image4);
+
+Ext.CLIJ2_pull(image5);
+run(&quot;glasbey_on_dark&quot;);
+Ext.CLIJ2_release(image5);
+</code></pre>
+<p><a href="image_1605606666537.png"><img src="image_1605606666537.png" width="250" alt="CLIJ2_connectedComponentsLabelingBox_result8"/></a></p>
+
+
+</body></html>

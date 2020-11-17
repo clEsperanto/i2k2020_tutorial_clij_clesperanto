@@ -1,0 +1,193 @@
+<protocol VERSION="4">
+<blocks>
+<block ID="1" blockType="plugins.haesleinhuepf.implementations.CLIJ2_PushSequenceBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="false" definedName="CLI j2_ push sequence" height="83" keepsResults="true" width="220" xLocation="0" yLocation="0">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" value="Active Sequence" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="input" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="2" blockType="plugins.haesleinhuepf.implementations.generated.CLIJ2_CopyBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="Copy" height="158" keepsResults="true" width="220" xLocation="363" yLocation="252">
+<variables>
+<input>
+<variable ID="cl_device" name="cl_device" runtime="false" value="" visible="true"/>
+<variable ID="source" name="source" runtime="false" visible="true"/>
+</input>
+<output>
+<variable ID="destination" name="destination" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="3" blockType="plugins.haesleinhuepf.implementations.CLIJ2_PullSequenceBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="CLI j2_ pull sequence" height="83" keepsResults="true" width="220" xLocation="363" yLocation="312">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="input" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="4" blockType="plugins.adufour.blocks.tools.Display" className="plugins.adufour.blocks.tools.Display" collapsed="false" definedName="Display" height="314" keepsResults="true" width="282" xLocation="363" yLocation="372">
+<variables>
+<input>
+<variable ID="object" name="object" runtime="false" type="icy.sequence.Sequence" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="5" blockType="plugins.haesleinhuepf.implementations.generated.CLIJ2_GaussianBlur2DBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="Gaussian blur2 D" height="158" keepsResults="true" width="220" xLocation="940" yLocation="13">
+<variables>
+<input>
+<variable ID="cl_device" name="cl_device" runtime="false" value="" visible="true"/>
+<variable ID="source" name="source" runtime="false" visible="true"/>
+<variable ID="sigma_x" name="sigma_x" runtime="false" value="16.0" visible="true"/>
+<variable ID="sigma_y" name="sigma_y" runtime="false" value="16.0" visible="true"/>
+</input>
+<output>
+<variable ID="destination" name="destination" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="6" blockType="plugins.haesleinhuepf.implementations.CLIJ2_PullSequenceBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="CLI j2_ pull sequence" height="83" keepsResults="true" width="220" xLocation="940" yLocation="73">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="input" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="7" blockType="plugins.adufour.blocks.tools.Display" className="plugins.adufour.blocks.tools.Display" collapsed="false" definedName="Display" height="314" keepsResults="true" width="282" xLocation="940" yLocation="133">
+<variables>
+<input>
+<variable ID="object" name="object" runtime="false" type="icy.sequence.Sequence" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="8" blockType="plugins.haesleinhuepf.implementations.generated.CLIJ2_GreaterBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="Greater" height="158" keepsResults="true" width="220" xLocation="897" yLocation="502">
+<variables>
+<input>
+<variable ID="cl_device" name="cl_device" runtime="false" value="" visible="true"/>
+<variable ID="source1" name="source1" runtime="false" visible="true"/>
+<variable ID="source2" name="source2" runtime="false" visible="true"/>
+</input>
+<output>
+<variable ID="destination" name="destination" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="9" blockType="plugins.haesleinhuepf.implementations.CLIJ2_PullSequenceBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="CLI j2_ pull sequence" height="83" keepsResults="true" width="220" xLocation="897" yLocation="562">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="input" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="10" blockType="plugins.adufour.blocks.tools.Display" className="plugins.adufour.blocks.tools.Display" collapsed="false" definedName="Display" height="314" keepsResults="true" width="282" xLocation="897" yLocation="622">
+<variables>
+<input>
+<variable ID="object" name="object" runtime="false" type="icy.sequence.Sequence" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="11" blockType="plugins.haesleinhuepf.implementations.generated.CLIJ2_ConnectedComponentsLabelingBoxBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="Connected components labeling box" height="158" keepsResults="true" width="220" xLocation="28" yLocation="709">
+<variables>
+<input>
+<variable ID="cl_device" name="cl_device" runtime="false" value="" visible="true"/>
+<variable ID="binary_input" name="binary_input" runtime="false" visible="true"/>
+</input>
+<output>
+<variable ID="labeling_destination" name="labeling_destination" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="12" blockType="plugins.haesleinhuepf.implementations.CLIJ2_PullSequenceBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="true" definedName="CLI j2_ pull sequence" height="83" keepsResults="true" width="220" xLocation="28" yLocation="769">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="input" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="13" blockType="plugins.adufour.blocks.tools.Display" className="plugins.adufour.blocks.tools.Display" collapsed="false" definedName="Display" height="314" keepsResults="true" width="282" xLocation="28" yLocation="829">
+<variables>
+<input>
+<variable ID="object" name="object" runtime="false" type="icy.sequence.Sequence" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="14" blockType="plugins.haesleinhuepf.implementations.CLIJ2_ReleaseBufferBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="false" definedName="CLI j2_ release buffer" height="61" keepsResults="true" width="220" xLocation="571" yLocation="391">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="15" blockType="plugins.haesleinhuepf.implementations.CLIJ2_ReleaseBufferBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="false" definedName="CLI j2_ release buffer" height="61" keepsResults="true" width="220" xLocation="1016" yLocation="600">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="16" blockType="plugins.haesleinhuepf.implementations.CLIJ2_ReleaseBufferBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="false" definedName="CLI j2_ release buffer" height="61" keepsResults="true" width="220" xLocation="1016" yLocation="650">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="17" blockType="plugins.haesleinhuepf.implementations.CLIJ2_ReleaseBufferBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="false" definedName="CLI j2_ release buffer" height="61" keepsResults="true" width="220" xLocation="292" yLocation="772">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="18" blockType="plugins.haesleinhuepf.implementations.CLIJ2_ReleaseBufferBlock" className="plugins.haesleinhuepf.CLIJ2Blocks" collapsed="false" definedName="CLI j2_ release buffer" height="61" keepsResults="true" width="220" xLocation="292" yLocation="772">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+</blocks>
+<links>
+<link dstBlockID="2" dstVarID="source" srcBlockID="1" srcVarID="output"/>
+<link dstBlockID="3" dstVarID="input" srcBlockID="2" srcVarID="destination"/>
+<link dstBlockID="14" dstVarID="input" srcBlockID="2" srcVarID="source"/>
+<link dstBlockID="4" dstVarID="object" srcBlockID="3" srcVarID="output"/>
+<link dstBlockID="5" dstVarID="source" srcBlockID="3" srcVarID="input"/>
+<link dstBlockID="6" dstVarID="input" srcBlockID="5" srcVarID="destination"/>
+<link dstBlockID="8" dstVarID="source1" srcBlockID="5" srcVarID="source"/>
+<link dstBlockID="7" dstVarID="object" srcBlockID="6" srcVarID="output"/>
+<link dstBlockID="8" dstVarID="source2" srcBlockID="6" srcVarID="input"/>
+<link dstBlockID="9" dstVarID="input" srcBlockID="8" srcVarID="destination"/>
+<link dstBlockID="15" dstVarID="input" srcBlockID="8" srcVarID="source1"/>
+<link dstBlockID="16" dstVarID="input" srcBlockID="8" srcVarID="source2"/>
+<link dstBlockID="10" dstVarID="object" srcBlockID="9" srcVarID="output"/>
+<link dstBlockID="11" dstVarID="binary_input" srcBlockID="9" srcVarID="input"/>
+<link dstBlockID="12" dstVarID="input" srcBlockID="11" srcVarID="labeling_destination"/>
+<link dstBlockID="17" dstVarID="input" srcBlockID="11" srcVarID="binary_input"/>
+<link dstBlockID="13" dstVarID="object" srcBlockID="12" srcVarID="output"/>
+<link dstBlockID="18" dstVarID="input" srcBlockID="12" srcVarID="input"/>
+</links>
+</protocol>

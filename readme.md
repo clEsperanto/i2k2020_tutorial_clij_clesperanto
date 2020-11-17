@@ -8,7 +8,7 @@
 * [Exercise 3: Quantitative comparison](https://github.com/haesleinhuepf/i2k2020_tutorial_clij_clesperanto/blob/master/exercise3_quantitative_comparison.md)
 * [Exercise 4: Counting blobs](https://github.com/haesleinhuepf/i2k2020_tutorial_clij_clesperanto/blob/master/exercise4_counting_blobs.md)
 
-4. export to qupath, icy, matlab, python
+* [Exercise 5: Interactive workflow design]()
 7. try exercises 1 or 3 in C++
 5. exercise: build up a workflow for tribolium morphometry (blur, spot-detection, threshold, cca)
 6. export to python, use dask/napari

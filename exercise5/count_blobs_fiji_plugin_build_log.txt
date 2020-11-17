@@ -1,0 +1,110 @@
+Cloning...
+Template: https://github.com/clij/clijx-assistant-plugin-generator-template
+Cloning into 'C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin'...
+Generating Java...
+Parsing project folder...
+Parsing file... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\pom.xml
+Parsing file... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\readme.md
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\java
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\java\net
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\java\net\haesleinhuepf
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\java\net\haesleinhuepf\clijx
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\java\net\haesleinhuepf\clijx\plugins
+Parsing file... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\java\net\haesleinhuepf\clijx\plugins\EnterClassNameHere.java
+Parsing directory... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\resources
+Parsing file... C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\main\resources\plugins.config
+Run maven...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< net.haesleinhuepf:clijx-assistant-count_blobs_ >-----------
+[INFO] Building Count_blobs 0.4.0.8
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-rules) @ clijx-assistant-count_blobs_ ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (sanitize-version) @ clijx-assistant-count_blobs_ ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (guess-package) @ clijx-assistant-count_blobs_ ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ clijx-assistant-count_blobs_ ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin
+[INFO] Storing buildNumber: 80fc8ca28255c72b677966084130b22a82f52305 at timestamp: 1605606504828
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.0.0:set-rootdir (set-rootdir) @ clijx-assistant-count_blobs_ ---
+[INFO] Setting rootdir: C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (jacoco-initialize) @ clijx-assistant-count_blobs_ ---
+[INFO] argLine set to -javaagent:C:\\Users\\rober\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\structure\\code\\i2k2020_tutorial_clij_clesperanto\\exercise5\\fiji_plugin\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ clijx-assistant-count_blobs_ ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\test\java
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ clijx-assistant-count_blobs_ ---
+[INFO] Compiling 1 source file to C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ clijx-assistant-count_blobs_ ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ clijx-assistant-count_blobs_ ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ clijx-assistant-count_blobs_ ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ clijx-assistant-count_blobs_ ---
+[INFO] Building jar: C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\target\clijx-assistant-count_blobs_-0.4.0.8.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources-jar) > generate-sources @ clijx-assistant-count_blobs_ >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-rules) @ clijx-assistant-count_blobs_ ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (sanitize-version) @ clijx-assistant-count_blobs_ ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (guess-package) @ clijx-assistant-count_blobs_ ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ clijx-assistant-count_blobs_ ---
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.0.0:set-rootdir (set-rootdir) @ clijx-assistant-count_blobs_ ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (jacoco-initialize) @ clijx-assistant-count_blobs_ ---
+[INFO] argLine set to -javaagent:C:\\Users\\rober\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\structure\\code\\i2k2020_tutorial_clij_clesperanto\\exercise5\\fiji_plugin\\target\\jacoco.exec
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources-jar) < generate-sources @ clijx-assistant-count_blobs_ <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources-jar) @ clijx-assistant-count_blobs_ ---
+[INFO] Building jar: C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin\target\clijx-assistant-count_blobs_-0.4.0.8-sources.jar
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:report (jacoco-site) @ clijx-assistant-count_blobs_ ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ clijx-assistant-count_blobs_ ---
+[INFO] Skipping packaging of the test-jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.751 s
+[INFO] Finished at: 2020-11-17T10:48:31+01:00
+[INFO] ------------------------------------------------------------------------
+Installing plugin...
+Source: C:\Programs\FI645F~1\Fiji.app\//target/clijx-assistant-count_blobs_-0.4.0.8.jar
+Target: C:\Programs\FI645F~1\Fiji.app\/plugins/clijx-assistant-count_blobs_-0.4.0.8.jar
+
+Installation failed.
+
+If build succeeded, check if a plugin with the same name exists already.
+The source code was saved to 
+C:\structure\code\i2k2020_tutorial_clij_clesperanto\exercise5\fiji_plugin
+
+If you need assistance, please provide the error message above and the source code to @haesleinhuepf on https://image.sc .
+Bye.
