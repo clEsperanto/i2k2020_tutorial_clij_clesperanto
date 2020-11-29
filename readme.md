@@ -84,7 +84,7 @@
 
 </td><td>
 
-[Exercise 10: CamelCase or snake_case?](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise10_camel_snake.md)
+[Exercise 15: CamelCase or snake_case?](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise15_camel_snake.md)
 
 </td></tr></table>
 
