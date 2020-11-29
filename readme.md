@@ -71,10 +71,24 @@
 
 </td></tr><tr><td>
 
+
+<img src="https://github.com/clEsperanto/i2k2020_tutorial_clij_clesperanto/raw/master/images/tribolium_morphometry.png" width="300"/>
+
 </td><td>
 
-[Exercise 9: Tribolium morpometry in Python](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise9_tribolium_morpometry.md)
+[Exercise 9: Tribolium morphometry in Python](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise9_tribolium_morphometry.md)
+
+</td></tr><tr><td>
+
+<img src="https://github.com/clEsperanto/i2k2020_tutorial_clij_clesperanto/raw/master/images/camel_snake.png" width="300"/>
+
+</td><td>
+
+[Exercise 10: Segmentation in napari + magicgui](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise10_camel_snake.md)
 
 </td></tr></table>
+
+
+
 
 
