@@ -1,6 +1,6 @@
 # Exercise 7: Segmentation in time lapse data
 
-Setup a workflow for estimating cell borders between nuclei in [CalibZAPWfixed_000154_max.tif](CalibZAPWfixed_000154_max.tif)
+Setup a workflow for estimating cell borders between nuclei in [CalibZAPWfixed_000154_max.tif](https://github.com/clEsperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise7/CalibZAPWfixed_000154_max.tif)
 
 ![Image](images/nuclei_voronoi.png)
 
