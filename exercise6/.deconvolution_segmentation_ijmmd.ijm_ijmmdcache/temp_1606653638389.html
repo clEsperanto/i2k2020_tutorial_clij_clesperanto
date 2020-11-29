@@ -1,0 +1,80 @@
+<html><head>
+<style>
+@font-face{font-family:Helvetica, Arial;font-weight:400;}
+body{font-family:Helvetica, Arial;}
+pre{font-family:Courier New, monospace;color:#000000;padding:5px 5px;background:#eeeeee;border:1px solid #dddddd;overflow-x:auto;margin:0}
+code{font-family:Courier New, monospace;}
+p,ul,ol,table,pre,dl{margin:0 0 20px}
+h1,h2,h3,h4,h5,h6{font-family:Helvetica, Arial;color:#222;margin:0 0 20px}
+h1,h2,h3{line-height:1.1}
+h1{font-size:28px}
+h2{color:#393939}
+h3,h4,h5,h6{color:#494949}
+table{padding:5px 5px;}
+th, td{font-family:Helvetica, Arial;margin:10px 10px 10px 10px; border: 1px solid #dddddd; padding: 15px;}}
+</style>
+</head>
+<body>
+<p>To make this script run in Fiji, please activate
+the clij, clij2 and IJMMD update sites in your Fiji
+installation. Read more: https://clij.github.io</p>
+<p>Generator version: 0.4.1.0</p>
+<pre><code class="language-java">// Init GPU
+run(&quot;CLIJ2 Macro Extensions&quot;, &quot;cl_device=&quot;);
+
+// Load image from disc 
+open(&quot;C:/structure/code/i2k2020_tutorial_clij_clesperanto/exercise6/perfect_psf_stack.tif&quot;);
+image1 = getTitle();
+Ext.CLIJ2_push(image1);
+
+</code></pre>
+<p><a href="image_1606653636943.png"><img src="image_1606653636943.png" width="250" alt="perfect_psf_stack-2.tif"/></a></p>
+<h2>Gaussian Blur3D</h2>
+<pre><code class="language-java">sigma_x = 4.0;
+sigma_y = 4.0;
+sigma_z = 0.0;
+Ext.CLIJ2_gaussianBlur3D(image1, image2, sigma_x, sigma_y, sigma_z);
+Ext.CLIJ2_release(image1);
+
+Ext.CLIJ2_pull(image2);
+
+// Load image from disc 
+open(&quot;C:/structure/code/i2k2020_tutorial_clij_clesperanto/exercise6/convolved_stack.tif&quot;);
+image3 = getTitle();
+Ext.CLIJ2_push(image3);
+
+</code></pre>
+<p><a href="image_1606653637112.png"><img src="image_1606653637112.png" width="250" alt="CLIJ2_gaussianBlur3D_result5"/></a>
+<a href="image_1606653637140.png"><img src="image_1606653637140.png" width="250" alt="convolved_stack-2.tif"/></a></p>
+<h2>Deconvolve Richardson Lucy FFT</h2>
+<pre><code class="language-java">num_iterations = 91.0;
+Ext.CLIJx_deconvolveRichardsonLucyFFT(image3, image2, image4, num_iterations);
+Ext.CLIJ2_release(image3);
+Ext.CLIJ2_release(image2);
+
+Ext.CLIJ2_pull(image4);
+
+</code></pre>
+<p><a href="image_1606653637767.png"><img src="image_1606653637767.png" width="250" alt="CLIJx_deconvolveRichardsonLucyFFT_result6"/></a></p>
+<h2>Greater Constant</h2>
+<pre><code class="language-java">constant = 270.0;
+Ext.CLIJ2_greaterConstant(image4, image5, constant);
+Ext.CLIJ2_release(image4);
+
+Ext.CLIJ2_pull(image5);
+
+</code></pre>
+<p><a href="image_1606653637929.png"><img src="image_1606653637929.png" width="250" alt="CLIJ2_greaterConstant_result7"/></a></p>
+<h2>Connected Components Labeling Box</h2>
+<pre><code class="language-java">Ext.CLIJ2_connectedComponentsLabelingBox(image5, image6);
+Ext.CLIJ2_release(image5);
+
+Ext.CLIJ2_pull(image6);
+run(&quot;glasbey_on_dark&quot;);
+Ext.CLIJ2_release(image6);
+</code></pre>
+<p><a href="image_1606653638262.png"><img src="image_1606653638262.png" width="250" alt="CLIJ2_connectedComponentsLabelingBox_result8"/></a></p>
+
+
+
+</body></html>
