@@ -5,4 +5,6 @@ and segment the cells. Hint: Check out the [ImageJ macro counter part workflow](
 
 Make use of napari and magicgui to tune the parameters of the workflow!
 
+Note: For this exercise you might need a powerful GPU.
+
 ![](images/tribolium_morphometry.png)
