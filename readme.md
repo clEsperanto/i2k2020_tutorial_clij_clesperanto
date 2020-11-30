@@ -80,6 +80,14 @@
 
 </td></tr><tr><td>
 
+<img src="https://github.com/clEsperanto/i2k2020_tutorial_clij_clesperanto/raw/master/images/clupath.png" width="300"/>
+
+</td><td>
+
+[Exercise 10: Cell Detection in QuPath with CluPath](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise10_CluPath_Mouse_brain_cell_detection.md)
+
+</td></tr><tr><td>
+
 <img src="https://github.com/clEsperanto/i2k2020_tutorial_clij_clesperanto/raw/master/images/camel_snake.png" width="300"/>
 
 </td><td>
