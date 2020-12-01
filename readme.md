@@ -88,6 +88,14 @@
 
 </td></tr><tr><td>
 
+<img src="https://github.com/clEsperanto/i2k2020_tutorial_clij_clesperanto/raw/master/images/flip_flop.png" width="300"/>
+
+</td><td>
+
+[Exercise 11: CamelCase or snake_case?](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise11_reuse_memory.md)
+
+</td></tr><tr><td>
+
 <img src="https://github.com/clEsperanto/i2k2020_tutorial_clij_clesperanto/raw/master/images/camel_snake.png" width="300"/>
 
 </td><td>
