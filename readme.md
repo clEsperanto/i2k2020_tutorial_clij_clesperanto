@@ -92,7 +92,7 @@
 
 </td><td>
 
-[Exercise 11: CamelCase or snake_case?](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise11_reuse_memory.md)
+[Exercise 11: Reusing versus reallocating memory](https://github.com/clesperanto/i2k2020_tutorial_clij_clesperanto/blob/master/exercise11_reuse_memory.md)
 
 </td></tr><tr><td>
 
