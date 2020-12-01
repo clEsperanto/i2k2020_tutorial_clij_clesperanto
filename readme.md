@@ -2,7 +2,7 @@
 ## Designing GPU-accelerated Image Data Flow Graphs for CLIJ2 and clEsperanto and deployment to ImageJ, Fiji, Icy, Matlab, QuPath, Python, Napari and C++
 
 * [Tutorial abstract](9.pdf)
-* Slices (link will come soon)
+* [Slides](GPU_accelerated_image_processing.pdf)
 
 <table border="0">
 <tr><td>
