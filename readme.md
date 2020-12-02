@@ -3,6 +3,7 @@
 
 * [Tutorial abstract](9.pdf)
 * [Slides](GPU_accelerated_image_processing.pdf)
+* [Installation instructions](https://clij.github.io/assistant/installation)
 
 <table border="0">
 <tr><td>
