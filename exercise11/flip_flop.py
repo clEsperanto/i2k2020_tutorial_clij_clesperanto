@@ -2,6 +2,9 @@ import pyclesperanto_prototype as cle
 import numpy as np
 import time
 
+cle.select_device('RTX')
+cle.set_wait_for_kernel_finish(True)
+
 # config
 num_iterations = 10
 num_tests = 10
@@ -21,8 +24,8 @@ for j in range(0, num_tests):
     start = time.time()
 
     for i in range(0, num_iterations):
-        cle.maximum_sphere(flip, flop, 10, 10, 0)
-        cle.minimum_sphere(flop, flip, 10, 10, 0)
+        cle.maximum_sphere(flip, flop, 3, 3, 0)
+        cle.minimum_sphere(flop, flip, 3, 3, 0)
 
     end = time.time()
 
@@ -33,8 +36,8 @@ for j in range(0, num_tests):
     start = time.time()
 
     for i in range(0, num_iterations):
-        flop = cle.maximum_sphere(flip, radius_x=10, radius_y=10, radius_z=0)
-        flip = cle.minimum_sphere(flop, radius_x=10, radius_y=10, radius_z=0)
+        flop = cle.maximum_sphere(flip, radius_x=3, radius_y=3, radius_z=0)
+        flip = cle.minimum_sphere(flop, radius_x=3, radius_y=3, radius_z=0)
 
     end = time.time()
 
